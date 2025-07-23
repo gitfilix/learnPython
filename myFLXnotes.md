@@ -10,3 +10,10 @@ mac combination for backslash
 
 `option-shift-7`
 
+
+## concatinated functions
+will be executed from inside-out
+
+print(input("What's your name?") +" " + input("What's your surname?"))
+
+first input-functions, then print-function.
