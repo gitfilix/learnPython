@@ -1,0 +1,1 @@
+print("your Beer should be named: \n\'" + input("What is your favorite colour? ") + " " + input("What is your favorite book? ") + "'\nCongratulations!")
