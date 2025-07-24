@@ -26,22 +26,34 @@ Integers: 1, 155, 0, -15
 
 Floats: 1.0, 155.0, 0.0, -15.5
 
-lists: ["apple", "banana", "cherry", 2.0, 154, "mars" ]
-(arrays)
+Booleans: True, False
 
-dictionaries: {"name": "John", "surname": "Doe", "age": 30}
-(key-value pairs, like a dictionary, like a object in JS)
+Structures
+----------
 
-tuples: ("apple", "banana", "cherry", 2.0, 154, "mars" )
+1. Lists: ["apple", "banana", "cherry", 2.0, 154, "mars" ]
+(arrays in JS)
+-> mutable, ordered, duplicate allowed
+
+2. Dictionaries: {"name": "John", "surname": "Doe", "age": 30}
+(key-value pairs, like a object in JS)
+-> mutable, unordered, duplicate not allowed
+
+3. Tuples: ("apple", "banana", "cherry", 2.0, 154, "mars" )
 (immutable order! )
+-> not mutable, ordered, duplicate not allowed
 
-sets: {"apple", "banana", "cherry", "mars" }
-(immutable order! of UNIQUE elements)
-
-booleans: True, False
+4. Sets: {"apple", "banana", "cherry", "mars" }
+(list of UNIQUE elements)
+-> not mutable, unordered, duplicate not allowed
 
 
 Variables
 ---------
-
+nameing restrictions:
+- cannot start with a number
+- cannot contain a space or hyphen
+- are case-sensitive!
+- cannot be a python keyword
+- Symbols like ', < > / ? | \ ( ) ! @ # $ % ^ & *= - + ~ are not allowed
 
