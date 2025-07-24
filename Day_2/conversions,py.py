@@ -8,3 +8,17 @@ num2 = int(num1)
 
 print(num2)
 print(type(num2))
+
+
+age = input("Tell my you age: ")
+# converts to integer, because input of age is a string
+age = int(age)
+# now the calculation works
+new_age = 1 + age
+
+print(new_age)
+
+
+num2 = 10
+num2 = float(num2)
+print(type(num2))
