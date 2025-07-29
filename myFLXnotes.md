@@ -23,8 +23,11 @@ Data Types in Python
 --------------------
 
 Integers: 1, 155, 0, -15
+-> used for counting, indexing, ranking, days, 
+
 
 Floats: 1.0, 155.0, 0.0, -15.5
+-> used for decimal numbers: grades, values, weights
 
 Booleans: True, False
 
@@ -56,4 +59,37 @@ nameing restrictions:
 - are case-sensitive!
 - cannot be a python keyword
 - Symbols like ', < > / ? | \ ( ) ! @ # $ % ^ & *= - + ~ are not allowed
+
+
+Type Casting 
+----------------
+
+Implicit: (automatic)
+int(1.0) -> 1
+float(1) -> 1.0
+str(1) -> "1"
+
+
+Explicit: (manually transformed)
+
+int(1.0) -> 1
+float(1) -> 1.0
+str(1) -> "1"
+
+
+String formatting
+-------------------
+
+1. format()
+print("Hello, {} my number is {}".format("John", 1234567890))
+
+2. literal string interpolation
+print(f"Hello, {name} my number is {number}")
+
+color = "red"
+licence_plate = 343432
+
+-> thats very readable literal string starting with 'f', modern way
+
+print(f"The car is {color} and its licence plate is: {licence_plate}")
 
