@@ -93,3 +93,9 @@ licence_plate = 343432
 
 print(f"The car is {color} and its licence plate is: {licence_plate}")
 
+
+conversions to integer
+
+sales = input("Enter sales amount: ")
+sales = int(sales)
+
