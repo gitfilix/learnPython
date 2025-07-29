@@ -99,3 +99,65 @@ conversions to integer
 sales = input("Enter sales amount: ")
 sales = int(sales)
 
+
+index method
+-------------
+
+my_text = "This text is a test"
+# character at 7th position is: x
+result = my_text[7]
+print(result)
+# substring search: at which position is word text starting? 5
+result_index = my_text.index("text")
+print(result_index)
+
+# rindex: reverse index search from right to left - search for the last occurrence of 'practice'
+sentence = "In theory, theory and practice are the same. In practice, they are not."
+r_result = sentence.rindex("practice")
+print(r_result)
+
+
+slicing
+-------
+text = "ABCDEFGHIJKLM"
+# slice the fragment from index 2 to 5
+fragment1 = text[2:5]
+
+
+# slice the fragment form start to 7
+fragment2 = text[:7]
+
+
+# slice the fragment form 4 to the end
+fragment3 = text[4:]
+
+# slice the fragment: start from pos 2 to 10 (not include 10), then take every second character (last parameter): CEGI
+fragment4 = text[2:10:2]
+
+# take all and reverse it
+fragment5 = text[::-1]
+
+# take every second and reverse it
+fragment6 = text[::-2]
+
+
+# Take every third character starting from the ninth to the end of the sentence, and print the result.
+sentence = "Never trust a computer you can't throw out a window"
+result = sentence[8::3]
+
+
+# split strings
+
+result.split("i") -> split on the character i
+result.split() -> split on every space
+
+# join
+a = "learning"
+b = "Python"
+c = "is"
+d = "fun!"
+e = " ".join([a, b, c, d])
+print(e)
+
+word_list = ["Simple","is","better","than","complex."]
+all_words = " ".join(word_list)
