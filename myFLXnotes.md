@@ -206,3 +206,34 @@ my_list.pop()
 my_list.pop(1)
 
 
+dictionaries properties
+------------------------
+- is mutable !
+- is unordered
+- is iterable
+- no index (is unordered, and no index)
+
+my_dict = {'name': 'John', 'surname': 'Smith'}
+
+
+dic2 = {'k1': ['a', 'b', 'c'], 'k2': ['d', 'e', 'f']}
+# get the second key, second value and transform it uppercase
+result = dic2['k2'][1].upper()
+
+# mutating key value pairs
+dict3 = {1: 'a', 2: 'b'}
+
+dict3[3] = 'c'
+
+dict3[2] = 'Beta'
+print(dict3)
+
+# print keys
+print(dict3.keys())
+
+# print values
+print(dict3.values())
+
+# all content of the dictionary - tupples
+print(dict3.items())
+

@@ -25,3 +25,5 @@ print(dict3.keys())
 #print values
 print(dict3.values())
 
+#all content of the dictionary - tupples
+print(dict3.items())
