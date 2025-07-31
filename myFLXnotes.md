@@ -161,3 +161,48 @@ print(e)
 
 word_list = ["Simple","is","better","than","complex."]
 all_words = " ".join(word_list)
+
+
+strings properties
+--------------------
+- is immutable
+- is ordered
+- is iterable
+
+# length
+len("hello") -> 5
+
+word = "electroencephalographist"
+print(len(word)) -> 24
+
+# test if 'linebreaks' are into the string
+print("linebreaks"  in string_with_lineBreak)
+# test if not in string
+print("sun" not in string_with_lineBreak)
+
+lists properties
+-----------------
+- is mutable
+- is ordered
+- is iterable
+
+my_list = ['a', 'b', 'c']
+
+# from index 0 to 1 -> ['a'] because the index 1 is not included.
+result = my_list[0:1]
+# from index 0 to 2 -> ['a', 'b'] because the index 2 is not included.
+result = my_list[0:2]
+# from index 1 to 2 -> ['b', 'c'] because the index 2 is not included.
+result = my_list[1:2]
+# you get the point
+
+# all elements from 0 to end of list
+result = my_list[0:]
+
+my_list = ['a', 'b', 'c']
+# without parameters it will delete the last element!
+my_list.pop()
+# with parameter it will delete the element at the given index!
+my_list.pop(1)
+
+
