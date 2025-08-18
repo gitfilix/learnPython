@@ -76,6 +76,9 @@ int(1.0) -> 1
 float(1) -> 1.0
 str(1) -> "1"
 
+to list:
+my_list = list("hello")
+
 
 String formatting
 -------------------
@@ -236,4 +239,69 @@ print(dict3.values())
 
 # all content of the dictionary - tupples
 print(dict3.items())
+
+Tuples
+-------
+very similar to lists, but they are immutable!
+
+my_tuple = (1, 2, (10, 20), 5, 2)
+
+# count: how many times we have value 2?
+print(my_tuple.count(2))
+
+# index: at what position is value 5? - 3
+print(my_tuple.index(5))
+
+
+set
+-----------------
+- unordered !
+- no index
+- no duplicates
+
+my_set = {1, 2, 3, 4, 5}
+or:
+(needs 2 brackets, no comma between brackets)
+my_set = {1, 2, 3, 4, 5}
+my_set = set([1, 2, 3, 4, 5])
+
+
+# first notation of set
+my_set = set((1, 2, 3, 4, 1, 3, 4, 2))
+# all duplicated values are removed by python - {1, 2, 3, 4}
+print(my_set)
+# length of unique items
+print(len(my_set))
+# test if value is in set:
+print(2 in my_set)
+
+#combine sets
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s3 = s1.union(s2)
+# duplicate value '3' will be removed in s3
+print(s3)
+
+s1.add(8)
+s1.remove(3)
+# discard works like remove but no error if the element is not present
+s1.discard(6)
+
+print(s1)
+# pop removes a RANDOM element
+draw = s2.pop()
+print('draw is: ',draw)
+
+
+Booleans
+--------
+
+list = [1, 3, 4, 6]
+control = 5 in list
+
+print(type(control))
+print(control)
+
+test = bool(17834/34 > 87*56)
+print(test)
 
