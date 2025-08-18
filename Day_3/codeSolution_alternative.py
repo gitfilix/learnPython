@@ -35,3 +35,19 @@ lastLetter = text[-1]
 
 print('first letter is ', firstLetter)
 print('last letter is ', lastLetter)
+
+print("\n")
+print("RE-verse the sentence")
+
+words.reverse()
+inverted_text = ' '.join(words)
+print(f"reversed order of the words are: '{inverted_text}' ")
+
+print("\n")
+print("Looking for the word Python")
+
+isPython = 'python' in text
+#create a dictionary method -strange
+dic = {True: 'was', False: 'was not'}
+
+print(f"The word 'Python' {dic[isPython]} found tin the text")
