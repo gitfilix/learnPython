@@ -305,3 +305,33 @@ print(control)
 test = bool(17834/34 > 87*56)
 print(test)
 
+Comparison Operators
+--------------------
+
+my_bool = 'white' == 'White' // false - case sensitive !
+
+logical operators
+
+keyword 'and' my_bool = 4 < 5 and  5 > 6
+keyword 'or'   (one of the condition is true)
+keyword 'in' for strings -> wordIsIn = 'sentence' in text
+keyword 'not' for testing if a value is falsy
+
+
+controll flow
+-------------
+
+if statements: if met -> good execute intended code, if not proceed.
+
+elif: else if
+
+age = 16
+has_license = False
+
+if age >= 18 and has_license:
+    print("You can drive")
+elif age < 18:
+    print("You can't drive yet. You must be 18 years old and have a license")
+elif age > 18:
+    if not has_license:
+        print("You can't drive. You need to have a license")
