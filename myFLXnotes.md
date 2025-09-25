@@ -335,3 +335,66 @@ elif age < 18:
 elif age > 18:
     if not has_license:
         print("You can't drive. You need to have a license")
+
+
+1. for loops
+---------------
+my_numbers = [1, 2, 3, 4, 5]
+my_value = 0
+
+for number in my_numbers:
+    my_value = my_value + number
+
+for characters in word:
+    print(characters)
+
+
+# with two assigned variables
+for a, b in [[1, 2], [3, 4], [5, 6]]:
+    print('a', a)
+    print('b', b)
+
+
+# in a dictionary
+dic = {'key1': 'a', 'key2': 'b', 'key3': 'c'}
+
+# whole item key value pair
+for item in dic.items():
+    print('item', item)
+
+# values in dictionaries
+for item in dic.values():
+    print('values only', item)
+
+
+2. while loop
+
+ - we cannot know how many times the loop will be executed
+
+while some_condition:
+    #this code
+
+else:
+    #other_code execution
+
+`number = 10
+while number > -1:
+    print(number)
+    number = number - 1`
+
+break: interrupt
+
+continue:
+
+pass: do nothing
+
+# Create a While Loop that subtracts one by one the numbers from 50 to 0 with the following additional conditions:
+# If the number is divisible by 5, show that number on the screen 
+`
+number = 50
+while number > -1:
+    if number / 5 % 1 == 0:
+        print(number)
+    number = number -1
+`
+
