@@ -337,7 +337,7 @@ elif age > 18:
         print("You can't drive. You need to have a license")
 
 
-1. for loops
+1. for-loops
 ---------------
 my_numbers = [1, 2, 3, 4, 5]
 my_value = 0
@@ -398,3 +398,12 @@ while number > -1:
     number = number -1
 `
 
+3. ranges for integers only
+
+# range from 20 to 30 (included) every 2nd step
+for num in range(20, 31, 2):
+    print(num)
+
+# create a list from 1 to 100
+my_list = list(range(1, 101))
+print(my_list)
