@@ -3,7 +3,7 @@ userName = input('what is your name?: ')
 tries = 8
 print(f' okay {userName}! you have {tries} to figure out a number between 1 and 100')
 
-secretNumber = int(randint(1, 101))
+secretNumber = int(randint(1, 100))
 
 print('hint SecretNumber is', secretNumber)
 
@@ -28,5 +28,7 @@ while tries > 0:
         print(f'Yes! thats correct! you have won! you used {7 - tries} attempt to figure it out' )
         break
 
+if tries == 0:
+    print(f'Sorry, we have run out of attempts. Game over. you lost! the secret number was: {secretNumber}')
 
 
