@@ -383,7 +383,7 @@ while number > -1:
     number = number - 1`
 
 break: interrupt
-
+bn
 continue:
 
 pass: do nothing
@@ -407,6 +407,22 @@ for num in range(20, 31, 2):
 # create a list from 1 to 100
 my_list = list(range(1, 101))
 print(my_list)
+
+4. match (new in python 3.1)
+-> this is equivalent to the switch/ case in other languages
+
+```
+match series:
+    case 'n-01':
+        print('samsung')
+    case 'n-02':
+        print('nokia')
+    case 'n-03':
+        print('motorola')
+    case _:
+        print('something else')
+```
+
 
 
 Enumerators
@@ -488,3 +504,13 @@ numbers = list(range(5, 60, 5))
 # changing the numbers randomly
 shuffle(numbers)
 print(numbers)
+
+
+list comprehensions
+--------------------
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
