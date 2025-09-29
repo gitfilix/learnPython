@@ -407,3 +407,84 @@ for num in range(20, 31, 2):
 # create a list from 1 to 100
 my_list = list(range(1, 101))
 print(my_list)
+
+
+Enumerators
+--------------
+access the index of a list or tupple with enumerate(my_list)
+
+list_names = ["Steven", "Jackie", "Donna",]
+
+for index, name in enumerate(list_names):
+    print(f'{name} is found at index {index}')
+
+#create a list formed by tuples (index, element) enumerating the indices of each character:
+
+my_list = "Python"
+indices_list = list(enumerate(my_list))
+print(indices_list)
+
+-> [(0, 'P'), (1, 'y'), (2, 't'), (3, 'h'), (4, 'o'), (5, 'n')]
+
+
+
+zip
+---
+
+compbination of lists: -> it takes always the shortes and ignores if another has more elements. 
+
+letters = ['w','x','c']
+numbers = [50, 65, 90, 110, 135]
+for letter, num in zip(letters, numbers):
+
+print(f'Letter: {letter}, and number: {num}')
+
+
+min() and max()
+---------------
+
+my_numbers = [8, 55, 12, 143, 12, 15, 77]
+print(f'the biggest number it {max(my_numbers)} and the smallest number is {min(my_numbers)}')
+
+# works also with strings! -> alphabetically sorting out
+names = ['John', 'Felix', 'Sarah', 'Paul', 'Aron']
+print(min(names))
+
+# dictionary -> the lowest alphabetically value
+dic = {'Key1': 33, 'Key2': 11, 'Key3': 30 }
+# -> the lowest alphabetically value -> Key-1
+print(min(dic))
+# ->  for the value search:
+print(min(dic.values()))
+
+
+Random library
+--------------
+
+# importing randint from random library
+from random import randint
+
+randint -> random integer
+# importing all from random library
+from random import *
+
+my_random = randint(1, 50)
+print(my_random)
+# round up after 2 decimals
+my_uni = round(uniform(1,  7), 2)
+print(my_uni)
+
+# orginal random is a float number
+my_float_random = random()
+print(my_float_random)
+
+# choice: random from a list
+colors = ['blue', 'green', 'red', 'yellow']
+my_random_color = choice(colors)
+print(my_random_color)
+
+# shuffle method
+numbers = list(range(5, 60, 5))
+# changing the numbers randomly
+shuffle(numbers)
+print(numbers)
