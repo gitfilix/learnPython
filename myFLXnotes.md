@@ -419,9 +419,10 @@ match series:
         print('nokia')
     case 'n-03':
         print('motorola')
-    case _:
+    case _:   #<--default
         print('something else')
 ```
+
 
 
 
@@ -514,3 +515,26 @@ fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = [x for x in fruits if "a" in x]
 
 print(newlist)
+
+
+functions
+-----------
+
+def my_function():
+"""
+here is just the documentation of the function 
+"""
+print('hi')
+
+
+def count_even(numbers3):
+    """
+        this returns a couter for all even numbers to be passed in a list
+    """    
+    count=0
+    for number in numbers3:
+        if number % 2 == 0:
+            count += 1
+        else:
+            pass
+    return count
