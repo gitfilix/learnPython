@@ -538,3 +538,18 @@ def count_even(numbers3):
         else:
             pass
     return count
+
+
+
+indefinite arguments
+----------------------
+
+in cases where the exact number of arguments to pass to a function is not known in advance, use the special `*args` syntax
+
+`*args` is the joker! 
+(thats the best practice syntax, we could also write `*cats`)
+
+def a_sum (arg1, arg2, *args):
+    for num in args:
+        print(num)
+
