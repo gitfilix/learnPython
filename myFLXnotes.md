@@ -545,7 +545,8 @@ indefinite arguments
 ----------------------
 
 in cases where the exact number of arguments to pass to a function is not known in advance, use the special `*args` syntax
-
+    1. *args
+ 
 `*args` is the joker! 
 (thats the best practice syntax, we could also write `*cats`)
 
@@ -553,3 +554,22 @@ def a_sum (arg1, arg2, *args):
     for num in args:
         print(num)
 
+
+
+2. `**kwargs` -> keyword args
+
+-> as many args as we like can be provided.
+-> additionally: we can name args when calling them in the calling function
+-> optain these keyword args -names inside the function as a dictionary. key or value.
+
+```
+def a_sum(**kwargs):
+    # Note: kwargs is now a dictionary type
+    print(type(kwargs))
+
+    for key, value in kwargs.items():
+        print(f'key', key, 'value', value)
+
+a_sum(x=2, y=4, z=2)
+
+```
