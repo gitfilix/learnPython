@@ -573,3 +573,27 @@ def a_sum(**kwargs):
 a_sum(x=2, y=4, z=2)
 
 ```
+
+
+File handling in python
+-----------------------
+
+my_file = open('test.txt')
+
+# read the content of the text file
+show = my_file.read()
+
+
+# store all content of the file in a list
+all = my_file.readlines()
+all = all.pop()
+print('all: is the last element as we popped out: ', all)
+
+# shows the first line
+one_line = my_file.readline()
+print(one_line)
+# shows the second line with the same command repeated
+one_line = my_file.readline()
+
+
+-> method .rstrip removes linebreaks and brings all to one line!
