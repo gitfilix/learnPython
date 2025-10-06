@@ -1,0 +1,4 @@
+I am the new line in text 
+I am the second line here
+    appending more text in a without manual linebreaks
+    with the 3-quotes method
